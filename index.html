@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BRETLIN A — Web Developer portfolio">
+  <title>BRETLIN A | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">BRETLIN A</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark or light mode">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Hero / Home ===== -->
+    <section id="home" class="section hero">
+      <div class="container hero-container">
+        <div class="hero-image-wrapper reveal">
+          <img
+            src="assets/profile.svg"
+            alt="BRETLIN A profile photo"
+            class="hero-image"
+            width="280"
+            height="280"
+          >
+        </div>
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">BRETLIN A</h1>
+          <p class="hero-subtitle">WEB DEVELOPER</p>
+          <p class="hero-description">
+            I build intelligent applications and clean, responsive web experiences.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="section-divider reveal"></div>
+        <div class="about-content reveal">
+          <p>
+            I'm an AI and Machine Learning student with a passion for turning data into
+            meaningful solutions. Alongside my studies, I develop modern websites using
+            HTML, CSS, and JavaScript — combining analytical thinking with creative design.
+          </p>
+          <p>
+            I'm always learning new tools and frameworks, and I enjoy working on projects
+            that bridge software development and intelligent systems. My goal is to build
+            technology that is both useful and accessible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="section-divider reveal"></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+            <h3>HTML</h3>
+            <p>Semantic markup and accessible structure</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">{ }</span>
+            <h3>CSS</h3>
+            <p>Responsive layouts and modern styling</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">JS</span>
+            <h3>JavaScript</h3>
+            <p>Interactive UI and DOM manipulation</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">Py</span>
+            <h3>Python</h3>
+            <p>Scripting, automation, and backend logic</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">ML</span>
+            <h3>Machine Learning</h3>
+            <p>Models, training, and data-driven insights</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">SQL</span>
+            <h3>SQL</h3>
+            <p>Database queries and data management</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">Git</span>
+            <h3>Git</h3>
+            <p>Version control and collaborative workflows</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <div class="section-divider reveal"></div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-image project-image-1" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Plant Disease Detection using Machine Learning</h3>
+              <p>
+                A computer vision project that classifies plant leaf images to detect
+                diseases early, helping farmers take timely action using trained ML models.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Computer Vision</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo</a>
+                <a href="#" class="project-link">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image project-image-2" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A responsive single-page portfolio built with vanilla HTML, CSS, and
+                JavaScript featuring dark mode, smooth scrolling, and mobile-first design.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo</a>
+                <a href="#" class="project-link">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image project-image-3" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3>Smart Desktop Assistant using Python</h3>
+              <p>
+                A desktop assistant that automates everyday tasks such as opening apps,
+                searching the web, and responding to voice or text commands.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Automation</span>
+                <span>Desktop App</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Demo</a>
+                <a href="#" class="project-link">Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Resume ===== -->
+    <section id="resume" class="section section-alt">
+      <div class="container resume-container reveal">
+        <h2 class="section-title">Resume</h2>
+        <div class="section-divider"></div>
+        <p class="resume-text">
+          Download my resume to learn more about my experience, education, and skills.
+        </p>
+        <a href="assets/resume.pdf" class="btn btn-primary btn-download" download>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          Download Resume (PDF)
+        </a>
+        <p class="resume-note">Place your file at <code>assets/resume.pdf</code> to enable the download.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <div class="section-divider reveal"></div>
+        <p class="contact-intro reveal">Feel free to reach out — I'd love to connect.</p>
+
+        <div class="contact-grid reveal">
+          <!-- REPLACE: email — paste your email below -->
+          <a href="mailto:bretlinbretlin0@gmail.com" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">bretlinbretlin0@gmail.com</span>
+          </a>
+
+          <a href="tel:+919345530810" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">+91 93455 30810</span>
+          </a>
+
+          <!-- REPLACE: LinkedIn — paste your LinkedIn URL below -->
+          <a href="https://linkedin.com/in/yourprofile" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/yourprofile</span>
+          </a>
+
+          <!-- REPLACE: GitHub — paste your GitHub URL below -->
+          <a href="https://github.com/yourusername" class="contact-card" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/yourusername</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; <span id="year"></span> BRETLIN A. All rights reserved.</p>
+      <div class="footer-social">
+        <!-- REPLACE: footer links — keep in sync with contact section -->
+        <a href="mailto:bretlinbretlin0@gmail.com" aria-label="Email" class="social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="https://github.com/yourusername" aria-label="GitHub" class="social-link" target="_blank" rel="noopener noreferrer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
